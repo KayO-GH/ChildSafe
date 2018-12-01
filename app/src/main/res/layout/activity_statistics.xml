@@ -6,6 +6,154 @@
     android:layout_height="match_parent"
     tools:context=".Statistics"
     android:background="@drawable/newback">
+    
+    <TextView
+        android:id="@+id/page_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:text="Most Recent Sites Visited "
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/site_address"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/page_title"
+        android:layout_marginStart="16dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Site Address"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="https://onesignal.com/"
+            android:textColor="#000"
+            android:textSize="12sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="https://onesignal.com/"
+            android:textColor="#000"
+            android:textSize="12sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="https://onesignal.com/"
+            android:textColor="#000"
+            android:textSize="12sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"/>/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="https://onesignal.com/"
+            android:textColor="#000"
+            android:textSize="12sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="https://onesignal.com/"
+            android:textColor="#000"
+            android:textSize="12sp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/date_visited"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/page_title"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date/Time Visited"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="01/12/2018/00:12"
+            android:textColor="#000"
+            android:textSize="12sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="01/12/2018/00:12"
+            android:textColor="#000"
+            android:textSize="12sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="01/12/2018/00:12"
+            android:textColor="#000"
+            android:textSize="12sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="01/12/2018/00:12"
+            android:textColor="#000"
+            android:textSize="12sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="01/12/2018/00:12"
+            android:textColor="#000"
+            android:textSize="12sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"/>
+
+
+
+
+
+    </LinearLayout>
 
 
 </RelativeLayout>
