@@ -9,3 +9,5 @@
 /build
 /captures
 .externalNativeBuild
+.idea/shelf/
+.idea/vcs.xml

@@ -73,6 +73,7 @@ public class CustomNotificationHandler implements OneSignal.NotificationReceived
                             } catch (JSONException e) {
                                 e.printStackTrace();
                             }finally {
+                                PreferenceData.setPrefFlaggedSites(ctx,allFlaggedData);
                                 adapter.setAllFlaggedData(allFlaggedData);
                                 adapter.notifyDataSetChanged();
                             }

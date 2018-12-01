@@ -9,6 +9,7 @@ import android.support.v7.widget.RecyclerView;
 import com.hackapi.childsafe.adapters.FlaggedItemsAdapter;
 import com.hackapi.childsafe.pojos.FlaggedData;
 import com.hackapi.childsafe.utils.CustomNotificationHandler;
+import com.hackapi.childsafe.utils.PreferenceData;
 import com.hackapi.childsafe.utils.VerticalSpace;
 import com.onesignal.OneSignal;
 
@@ -33,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
                 .unsubscribeWhenNotificationsAreDisabled(true)
                 .setNotificationReceivedHandler(new CustomNotificationHandler(MainActivity.this,flaggedItemsAdapter))
                 .init();
+
+        flaggedItemsAdapter.setAllFlaggedData(PreferenceData.getPrefFlaggedSites(MainActivity.this));
     }
 
     private void init() {
