@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Statistics"
-    android:background="@drawable/newback">
+    tools:context=".StatisticsActivity">
     
     <TextView
         android:id="@+id/page_title"
@@ -13,7 +12,6 @@
         android:layout_height="wrap_content" 
         android:text="Most Recent Sites Visited "
         android:textSize="18sp"
-        android:textColor="#fff"
         android:padding="10dp"
         android:layout_centerHorizontal="true"
         android:textStyle="bold"/>
