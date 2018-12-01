@@ -2,10 +2,8 @@ package com.hackapi.childsafe.adapters;
 
 import android.content.Context;
 import android.content.Intent;
-import android.os.Build;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
-import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -46,14 +44,14 @@ public class FlaggedItemsAdapter extends RecyclerView.Adapter<FlaggedItemsAdapte
         YoYo.with(Techniques.FadeIn).playOn(holder.cardView);
         final FlaggedData currentItem = allFlaggedData.get(position);
         holder.tvDateTime.setText(currentItem.getDateTime());
-        holder.tvUrl.setText(currentItem.getUrl());
-//        Picasso.with(ctx)
-//                .load(currentItem.getThumbPath())
-//                .fit()
-//                .centerCrop()
-//                .error(R.drawable.fgbmfi_logo)
-//                .placeholder(R.drawable.fgbmfi_logo)
-//                .into(holder.ivNewsThumb);
+        holder.tvUrl.setText(currentItem.getImgUrl());
+        Picasso.with(ctx)
+                .load(currentItem.getImgUrl())
+                .fit()
+                .centerCrop()
+                .error(R.drawable.childsafe)
+                .placeholder(R.drawable.childsafelogo)
+                .into(holder.ivNewsThumb);
 
 //        holder.cardView.setOnClickListener(new View.OnClickListener() {
 //            @Override

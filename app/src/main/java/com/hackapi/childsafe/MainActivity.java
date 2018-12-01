@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         OneSignal.startInit(this)
                 .inFocusDisplaying(OneSignal.OSInFocusDisplayOption.Notification)
                 .unsubscribeWhenNotificationsAreDisabled(true)
-                .setNotificationReceivedHandler(new CustomNotificationHandler())
+                .setNotificationReceivedHandler(new CustomNotificationHandler(MainActivity.this,flaggedItemsAdapter))
                 .init();
     }
 

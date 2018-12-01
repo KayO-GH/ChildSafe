@@ -3,20 +3,22 @@ package com.hackapi.childsafe.pojos;
 import java.io.Serializable;
 
 public class FlaggedData implements Serializable {
-    String url;
+    String imgUrl;
+    String initiatorUrl;
     String dateTime;
 
-    public FlaggedData(String url, String dateTime) {
-        this.url = url;
+    public FlaggedData(String imgUrl, String initiatorUrl, String dateTime) {
+        this.imgUrl = imgUrl;
+        this.initiatorUrl = initiatorUrl;
         this.dateTime = dateTime;
     }
 
-    public String getUrl() {
-        return url;
+    public String getImgUrl() {
+        return imgUrl;
     }
 
-    public void setUrl(String url) {
-        this.url = url;
+    public void setImgUrl(String imgUrl) {
+        this.imgUrl = imgUrl;
     }
 
     public String getDateTime() {
@@ -25,5 +27,13 @@ public class FlaggedData implements Serializable {
 
     public void setDateTime(String dateTime) {
         this.dateTime = dateTime;
+    }
+
+    public String getInitiatorUrl() {
+        return initiatorUrl;
+    }
+
+    public void setInitiatorUrl(String initiatorUrl) {
+        this.initiatorUrl = initiatorUrl;
     }
 }
